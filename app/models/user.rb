@@ -15,4 +15,8 @@ class User < ActiveRecord::Base
   def full_address
     "#{street} #{suburb} #{postcode} #{state} #{country}"
   end
+
+  def gmaps4rails_infowindow
+    name 
+  end
 end
